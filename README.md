@@ -31,7 +31,8 @@ git clone <your_repo_url>
 cd Sam_chatbot
 ```
 
-2. Create Virtual Environment
+### 2. Create Virtual Environment
+
 Windows:
 ```bash
 python -m venv venv
@@ -42,48 +43,50 @@ Mac/Linux:
 python -m venv venv
 source venv/bin/activate
 ```
-3. Install Requirements
+### 3. Install Requirements
 ```bash
 pip install -r requirements.txt
 ```
-4. Install Ollama
-Download:
-https://ollama.com
+### 4. Install Ollama
+
+Download: https://ollama.com
 
 Check:
 ```bash
 ollama --version
 ```
 
-5. Pull Required Models
+### 5. Pull Required Models
+
 Open a NEW terminal:
 ```bash
 ollama pull phi3
 ollama pull nomic-embed-text
 ```
 
-6. Generate Dataset File
+### 6. Generate Dataset File
 ```bash
 python backend/data_loader.py
 ```
 
-7. Build Vector Store
+### 7. Build Vector Store
 (Delete vector_store/ first if exists)
 ```bash
 python backend/vector_store.py
 ```
 
-8. Start Backend
+### 8. Start Backend
 ```bash
 uvicorn backend.main:app --reload
 ```
 
 Backend runs at: http://127.0.0.1:8000
 
-9. Start Frontend
+### 9. Start Frontend
 New terminal:
 ```bash
 streamlit run app.py
 ```
 Open: http://localhost:8501
+
 Example: what happens in video7135?
