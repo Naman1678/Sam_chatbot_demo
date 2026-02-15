@@ -1,0 +1,13 @@
+MSR-VTT Dataset
+      ↓
+Extract video7135 annotation
+      ↓
+Store as clean text
+      ↓
+Convert text → embeddings
+      ↓
+Store embeddings in Vector DB
+      ↓
+Chatbot retrieves relevant text
+      ↓
+LLM (OpenRouter) answers user
